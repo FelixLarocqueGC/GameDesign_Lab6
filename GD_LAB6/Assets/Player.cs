@@ -38,5 +38,6 @@ public class Player : MonoBehaviour
         }
         Vector2 direction = new Vector2(xDir, yDir).normalized;
         rb.velocity = direction * speed;
+
     }
 }
