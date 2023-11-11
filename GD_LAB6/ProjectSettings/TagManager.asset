@@ -12,6 +12,7 @@ TagManager:
   - TextFelix
   - TextCole
   - TextTristan
+  - Text
   layers:
   - Default
   - TransparentFX

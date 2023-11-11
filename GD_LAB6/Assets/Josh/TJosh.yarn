@@ -1,0 +1,18 @@
+﻿title: TJosh
+tags:
+---
+Josh: Hmm...
+-> What's wrong?
+    Josh: It looks like the house took some damage from the earthquake
+    -> Is there anything i can do to help?
+        Josh: Let me think...
+        Josh: First we need to repair the roof.
+        Josh: Would you be able to collect 5 wood and 10 stone?`
+        -> Of Course!
+            Thanks a lot!
+            <<stop>>
+        -> No
+            oh...okay
+            <<stop>>
+
+===
