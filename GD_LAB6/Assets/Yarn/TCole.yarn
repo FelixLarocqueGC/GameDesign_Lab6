@@ -1,5 +1,23 @@
-﻿title: TCole
+﻿title: CStart
 tags:
 ---
+Cole: This is going to be a problem...
+-> Whats going to be a problem?
+    Cole: The earthquake ruined my field!
+    Cole: I'll have to re-till the dirt, and re-plant my strawberry seeds...
+    Cole: It's so late into the season too...
+    Cole: I'll have to get some of my speed-gro to speed up the harvest.
+    -> I can help out!
+        Cole: Thank you so much!
+        Cole: If I remember correctly the seeds should be in the chest.
+        Cole: You can borrow my Hoe to prepare for the re-planting, here!
+        <<declare $hasHoe = true>>
+        You obtained -> Iron Hoe!
+        Cole: I'll give you the speed grow once you complete these two tasks first.
+        Cole: Good luck!
+        <<stop>>
+    -> Darn, hope you get it done quick.
+        Cole: If only I had some help around here...
+        <<stop>>
 
 ===
