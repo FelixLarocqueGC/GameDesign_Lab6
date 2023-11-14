@@ -2710,7 +2710,6 @@ GameObject:
   - component: {fileID: 1814906509}
   - component: {fileID: 1814906508}
   - component: {fileID: 1814906507}
-  - component: {fileID: 1814906511}
   m_Layer: 0
   m_Name: TextZone (1)
   m_TagString: TextTristan
@@ -2820,20 +2819,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1521893127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1814906511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814906506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d55debbedfd64e45ac30c1b1666e141, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueSystem: {fileID: 0}
-  yarn: {fileID: 0}
 --- !u!1 &1942153308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3276363994777163322, guid: 134e35f79a190744cb8d9fa07d0a7c45, type: 3}
