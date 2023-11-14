@@ -10,7 +10,6 @@ public class YarnInteractable : MonoBehaviour
     public void Start()
     {
         dialogueRunner = FindObjectOfType<DialogueRunner>();
-        dialogueRunner.onDialogueComplete.AddListener(EndConversation);
     }
 
     // then we need a function to tell Yarn Spinner to start from {specifiedNodeName}
@@ -23,6 +22,7 @@ public class YarnInteractable : MonoBehaviour
         isCurrentConversation = true;
         // TODO *begin animation or turn on speaker indicator or whatever* HERE
         dialogueRunner.StartDialogue(conversationStartNode);
+        dialogueRunner.onDialogueComplete.AddListener(EndConversation);
     }
 
     private void EndConversation()
@@ -47,7 +47,10 @@ public class YarnInteractable : MonoBehaviour
                 StartConversation();
 
             }
-
+            else
+            {
+                player.walkAllowed = true;
+            }
         }
     }
 }
