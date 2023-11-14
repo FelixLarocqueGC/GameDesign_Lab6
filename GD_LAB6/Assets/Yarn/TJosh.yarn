@@ -2,14 +2,20 @@
 tags:
 ---
 Josh: Hmm...
+Josh: What am I going to do?
 -> What's wrong?
-    Josh: It looks like the house took some damage from the earthquake
+    Josh: It looks like the house took some damage from the earthquake.
+    Josh: Luckily, i don't think any structural damage was done to the building.
     -> Is there anything i can do to help?
+        Josh: Really!? You'll help me out?
         Josh: Let me think...
         Josh: First we need to repair the roof.
-        Josh: Would you be able to collect 5 wood and 10 stone?`
+        Josh: Would you be able to collect 5 wood and 10 stone?
         -> Of Course!
             Thanks a lot!
+            Here. If you're going to be collecting wood youre going to need an axe.
+            <<declare $hasAxe = true>>
+            You obtained -> Iron Axe!
             <<stop>>
         -> No
             oh...okay
