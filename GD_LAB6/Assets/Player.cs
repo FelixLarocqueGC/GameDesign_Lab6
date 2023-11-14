@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public float speed = 10.0f;
     Rigidbody2D rb;
+    public bool walkAllowed = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,10 @@ public class Player : MonoBehaviour
             xDir = 1.0f;
         }
         Vector2 direction = new Vector2(xDir, yDir).normalized;
-        rb.velocity = direction * speed;
+        if (walkAllowed)
+        {
+            rb.velocity = direction * speed;
+        }
 
     }
 }
