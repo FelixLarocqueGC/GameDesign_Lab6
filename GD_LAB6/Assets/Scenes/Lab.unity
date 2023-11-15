@@ -3187,7 +3187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd433a9a290a92429995639d07d1219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationStartNode: 
+  conversationStartNode: FStart
 --- !u!1 &2135249347
 GameObject:
   m_ObjectHideFlags: 0
