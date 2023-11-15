@@ -2816,7 +2816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd433a9a290a92429995639d07d1219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversationStartNode: 
+  conversationStartNode: TStart
 --- !u!1 &1942153308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3276363994777163322, guid: 134e35f79a190744cb8d9fa07d0a7c45, type: 3}
