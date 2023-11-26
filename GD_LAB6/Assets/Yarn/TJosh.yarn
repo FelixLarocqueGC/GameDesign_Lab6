@@ -14,7 +14,6 @@ Josh: What am I going to do?
         -> Of Course!
             Thanks a lot!
             Here. If you're going to be collecting wood youre going to need an axe.
-            <<declare $hasAxe = true>>
             You obtained -> Iron Axe!
             <<stop>>
         -> No

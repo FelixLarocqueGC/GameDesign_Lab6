@@ -1,9 +1,11 @@
 ﻿title: TristanQuest
 tags:
 ---
+"The Diamond Necklace" by Tristan Perry 
+<<declare $talkToJosh = false>> 
 Tristan: Hmm what's this ? 
 Tristan picks up a diamond necklace 
-"The Diamond Necklace" (quest begins)
+Obtained Diamond Necklace
 Tristan: It's a very beautiful necklace, hmm what's this at the bottom 
 Tristan finds a little case attachedd to the necklace 
 He opens it up and finds an image of a woman with the initials A.L carved into the side of the case 
@@ -12,8 +14,84 @@ Tristan: They must have lost it during the earthquake that happened recently
 Evil Tristan: Just leave it, we don't have time to play around with people's toys
 Tristan: It's not a toy. It's probably a valued treasure for someone and we're gonna give it back to them.
 Evil Tristan: You're killing me here 
-Tristan then goes around the town talking to the townsfolk trying to figure out who's necklace does this belong to 
-He talks to Josh and Cole and eventually figures out that it belongs to Old Man Felix 
-Tristan brings the necklace back to Old Man Felix and he thanks Tristan for brining it back to him 
-End of Quest 
+Tristan: Maybe Josh will know something about this. I should go speak to him
+<<$talkToJosh = true>>
+<<jump AskJosh>>
+===
+title: AskJosh
+---
+<<if $talkToJosh is true>>
+Tristan: Hey Josh ! I found this old diamond necklace in some rubble at the hill near the edge of town
+Tristan: Have any idea who this might belong to 
+Tristan hands him the diamond necklace 
+Josh: Hmm I've never seen this in my life
+Josh: I don't have a clue to begin with 
+Josh: You know a lot of people come around this house so if you want I can take that necklance off your hands and start asking people who come by if it belongs to them ? 
+Josh: Or would you rather keep hold of it yourself ?
+    -> I'll hold onto it and try and find the owner myself 
+    <<jump HoldOn>>
+    -> I'll leave it in your care Josh
+    <<jump LeaveIt>>
+<<endif>>
+===
+title: HoldOn
+---
+Tristan: That's probably the best solution I think it'll be faster to have people come to us rather than chase after them so I'll just let you hold on it 
+Josh: Ok I promise I'll get it back to it's owner 
+Tristan: Thank you Josh 
+Tristan then talks to himself 
+Tristan: I hope the owner is able to find it
+"The Diamond Necklace" Completed 
+===
+title: LeaveIt
+---
+<<declare $talkToCole = false>>
+Tristan: I think I'll take my chances and hold onto the necklace. The town isn't that big anyways so I'm sure I'll run into the owner sooner than later 
+Josh: Ok well I wish you the best of luck then 
+Josh: You should try and talk to Cole, he talks to everyone in town so maybe he'll have a better idea on who the necklace belongs to 
+Tristan: Ok thank you for the info !
+Tristan then talks to himself 
+Tristan: Ok guess I should go talk to Cole then 
+<<$talkToCole = true>>
+
+<<if $talkToCole is true>> 
+Tristan: Hey Cole sorry to bother you 
+Cole: Oh no worries at all what's the matter
+Tristan: Well you see I was trying to help clean up some of the wreckage from the earthquake and I found this necklace while digging around some rubble near the hill at the edge of town 
+Tristan then hands Cole the necklace 
+Cole: Wow it's beautiful, I wonder where they got all those diamonds
+Tristan: If you open up the case at the bottom there's a picture of a woman with initials carved beside her 
+Cole then opens up the case and has a shocked expression on his face 
+Tristan: Is everything alright ? 
+Cole: I know who this belongs to 
+Tristan: WHO !
+Cole: It belongs to Felix the man who watches over the animal pen 
+Tristan: Oh really ? Then who is this woman in the picture 
+Cole: That's his past wife who sadly passed away many years ago 
+Cole: Her name is Aliya Laroque and those two were insperable back then 
+Cole: They both loved each other so much but sadly cancer got the best of Aliya and she passed 
+Cole: That loss hurt Felix very much 
+Tristan: Wow that's awful, I should return this to him though I'm sure he's missing it 
+Cole: I'm sure he would greatly appreciate you for doing that 
+Tristan: Thanks again Cole I couldn't have done it without you !
+Cole: No problem Tristan take care !
+Tristan then talks to himself
+Tristan: Finally I figured it out now I can deliver this to Felix 
+<<endif>>
+<<declare $talkToFelix = true>> 
+<<if $talkToFelix is true>> 
+
+Tristan: Felix ! Felix ! 
+Felix: Hmm oh hello Tristan. What seems to be the matter ? 
+Tristan: I believe I found something that belongs to you 
+Felix: Hmm ? 
+Tristan then hands Felix the necklace and Felix's face lights up in joy
+Felix: Where did you find this ? 
+Tristan: I found it amongst the rubble near the hill at the edge of town 
+Tristan: I tried finding out who this belongs to so I talked to Josh and Cole and Cole ended up leading me here to you 
+Felix then starts to shed a tear 
+Felix: Thank you Tristan, now I can continue having my wife with me in my heart forever 
+Tristan: Don't mention it Felix. I'm glad I could help you 
+"The Diamond Necklace" Completed
+<<endif>>
 ===
