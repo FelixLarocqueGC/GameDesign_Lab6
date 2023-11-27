@@ -3837,6 +3837,7 @@ GameObject:
   - component: {fileID: 2044876937}
   - component: {fileID: 2044876936}
   - component: {fileID: 2044876938}
+  - component: {fileID: 2044876939}
   m_Layer: 0
   m_Name: TextZone
   m_TagString: TextFelix
@@ -3959,6 +3960,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationStartNode: FStart
+--- !u!114 &2044876939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044876934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ea31db65f5adb44aa804de23c1df6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 252720898}
 --- !u!1 &2135249347
 GameObject:
   m_ObjectHideFlags: 0

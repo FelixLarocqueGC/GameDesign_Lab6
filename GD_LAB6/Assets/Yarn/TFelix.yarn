@@ -43,3 +43,23 @@ Felix: Oh why hello there. Might you be an passing traveler?
             Felix: Oh that's a shame, they're quite good for you and they taste good with the town's seasoning.
             <<stop>>
 ===
+title: FEnd1
+---
+Felix: Oh hello again...
+Felix: What's that you say? You've found my fleeting hen?
+Felix: Terrific! Oh how joyous it is to see the hen back into their cage once again.
+Felix: Now then, of course, you shall be rewarded for your heroic actions.
+Felix: Here you are, 2 silvers pieces for the young man!
+<<declare $silver = 2>>
+<<stop>>
+===
+title: FEnd2
+---
+Felix: Oh hello again...
+Felix: Ah yes, you've come back with my hen?
+Felix: Lovely! Oh but it seems there are some missing hen among those you brought back.
+Felix: No matter, you brought some back nonetheless.
+Felix: Here you are, 2 bronze pieces.
+<<declare $bronze = 2>>
+<<stop>>
+===
