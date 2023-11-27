@@ -1,6 +1,27 @@
 ﻿title: CStart
 tags:
 ---
+<<declare $hasHoe = false>>
+<<declare $hasSeeds = false>>
+<<declare $hasWater = false>>
+<<declare $tillField = false>>
+<<if $tillField == true>>
+Cole: Great job man! You really know how to be a farmer eh? Let me know if you need a part-time job in the future!
+<<stop>>
+<<endif>>
+<<if $hasHoe == true>>
+Cole: Hey again, you got everything?
+<<if $hasSeeds == true && $hasWater == true>>
+-> I have them all.
+    Cole: Great! Now fix up the land, plant and water the seeds and call it a day!
+    Cole: By the way, you can keep the hoe once you're done, as a thanks from me!
+    <<stop>>
+<<endif>>
+-> Not yet, sorry.
+    Cole: Dont worry about it! Just let me know when you have everything ready!
+    <<stop>>
+<<endif>>
+<<if $hasHoe == false>>
 Cole: This is going to be a problem...
 -> Whats going to be a problem?
     Cole: The earthquake ruined my field!
@@ -11,7 +32,7 @@ Cole: This is going to be a problem...
         Cole: Thank you so much!
         Cole: If I remember correctly the seeds should be in the chest.
         Cole: You can borrow my Hoe to prepare for the re-planting, here!
-        <<declare $hasHoe = true>>
+        <<set $hasHoe = true>>
         You obtained -> Iron Hoe!
         Cole: If I remember correctly, the Watering Can should be behind the house.
         Cole: Good luck!
@@ -19,5 +40,43 @@ Cole: This is going to be a problem...
     -> Darn, hope you get it done quick.
         Cole: If only I had some help around here...
         <<stop>>
+<<endif>>
+===
 
+title: ColeChest
+tags:
+---
+<<if $hasHoe == true>>
+I found the Strawberry Seeds.
+You obtained -> Strawberry Seeds!
+<<set $hasSeeds = true>>
+<<stop>>
+<<endif>>
+===
+
+title: ColeWater
+tags:
+---
+<<if $hasHoe == true>>
+I found the Watering Can.
+You obtained -> Watering Can!
+<<set $hasWater = true>>
+<<stop>>
+<<endif>>
+===
+
+title: ColeField
+tags:
+---
+<<if $hasHoe == true && $hasSeeds == true && $hasWater ==true>>
+Time to get this done.
+-> Re-till the land
+    You prepare the lane to plant seeds.
+    -> Plant the seeds.
+    You plant the strawberry seeds.
+        -> Water the planted seeds.
+        You water the seeds.
+        <<set $tillField = true>>
+        <<stop>>
+<<endif>>
 ===
