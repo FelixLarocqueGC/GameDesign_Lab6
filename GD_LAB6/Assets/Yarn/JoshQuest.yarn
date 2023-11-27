@@ -1,6 +1,22 @@
 ﻿title: JoshQuest
 tags:
 ---
+<<declare $hasAxe = false>>
+<<declare $collectedItems = false>>
+<<if $hasAxe == true>>
+Josh: You're back! Do you have the 10 wood and 10 stones?
+<<if $collectedItems == true>>
+-> Here you are.
+    Josh: Wow! You're a life saver!
+    Josh: as a reward, i'll let you know that while you were out, I saw Cole headed west, murmering something about the Animal Pen. Maybe you can find something out there!
+    Josh: Oh, and you can keep that axe! You know, as a token of my appreciation.
+    <<stop>>
+<<endif>>
+-> Not yet.
+    Josh: No worries! We just need 10 wood and 10 stones and we should be able to get everything back to good shape.
+    <<stop>>
+<<endif>>
+<<if $hasAxe == false>>
 Josh: Hmm...
 Josh: What am I going to do?
 -> What's wrong?
@@ -18,24 +34,26 @@ Josh: What am I going to do?
             -> Of Course!
                 Thanks a lot!
                 Here. If you're going to be collecting wood youre going to need an axe.
-                <<declare $hasAxe = true>>
+                <<set $hasAxe = true>>
                 You obtained -> Iron Axe!
                 <<stop>>
             -> No
                 oh...okay
                 <<stop>>
+<<endif>>
 
 ===
 
-title: JoshComplete
+title: JoshItems
+tags:
 ---
-Josh: You're back! Do you have the 10 wood and 10 stones?
--> Here you are.
-    Josh: Wow! You're a life saver!
-    Josh: as a reward, i'll let you know that while you were out, I saw Cole headed west, murmering something about the Animal Pen. Maybe you can find something out there!
-    Josh: Oh, and you can keep that axe! You know, as a token of my appreciation.
-    <<stop>>
--> Not yet.
-    Josh: No worries! We just need 10 wood and 10 stones and we should be able to get everything back to good shape.
-    <<stop>>
+Looks like I found some Stones and Trees
+<<if $hasAxe == true>>
+You collect the requested 10 stone and 10 wood!
+<<set $collectedItems = true>>
+<<stop>>
+<<endif>>
+<<if $hasAxe == false>>
+if only i had a tool that could help me
+<<endif>>
 ===

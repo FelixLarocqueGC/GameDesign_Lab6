@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3652831215738797754}
   - component: {fileID: 6907190996281874081}
   m_Layer: 0
-  m_Name: Felix - Animal Pen
+  m_Name: Collision Zone Trees
   m_TagString: Felix
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
