@@ -15,12 +15,12 @@ Evil Tristan: Just leave it, we don't have time to play around with people's toy
 Tristan: It's not a toy. It's probably a valued treasure for someone and we're gonna give it back to them.
 Evil Tristan: You're killing me here 
 Tristan: Maybe Josh will know something about this. I should go speak to him
-<<$talkToJosh = true>>
+
 <<jump AskJosh>>
 ===
 title: AskJosh
 ---
-<<if $talkToJosh is true>>
+
 Tristan: Hey Josh ! I found this old diamond necklace in some rubble at the hill near the edge of town
 Tristan: Have any idea who this might belong to 
 Tristan hands him the diamond necklace 
@@ -32,7 +32,7 @@ Josh: Or would you rather keep hold of it yourself ?
     <<jump HoldOn>>
     -> I'll leave it in your care Josh
     <<jump LeaveIt>>
-<<endif>>
+
 ===
 title: HoldOn
 ---
@@ -52,9 +52,9 @@ Josh: You should try and talk to Cole, he talks to everyone in town so maybe he'
 Tristan: Ok thank you for the info !
 Tristan then talks to himself 
 Tristan: Ok guess I should go talk to Cole then 
-<<$talkToCole = true>>
 
-<<if $talkToCole is true>> 
+
+
 Tristan: Hey Cole sorry to bother you 
 Cole: Oh no worries at all what's the matter
 Tristan: Well you see I was trying to help clean up some of the wreckage from the earthquake and I found this necklace while digging around some rubble near the hill at the edge of town 
@@ -77,9 +77,9 @@ Tristan: Thanks again Cole I couldn't have done it without you !
 Cole: No problem Tristan take care !
 Tristan then talks to himself
 Tristan: Finally I figured it out now I can deliver this to Felix 
-<<endif>>
+
 <<declare $talkToFelix = true>> 
-<<if $talkToFelix is true>> 
+
 
 Tristan: Felix ! Felix ! 
 Felix: Hmm oh hello Tristan. What seems to be the matter ? 
@@ -93,5 +93,5 @@ Felix then starts to shed a tear
 Felix: Thank you Tristan, now I can continue having my wife with me in my heart forever 
 Tristan: Don't mention it Felix. I'm glad I could help you 
 "The Diamond Necklace" Completed
-<<endif>>
+
 ===
