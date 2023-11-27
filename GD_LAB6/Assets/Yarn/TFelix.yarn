@@ -2,38 +2,39 @@
 tags:
 position: 0,0
 ---
+Quest Begin: Chicken Run / By Felix Larocque
 Felix: Oh dear...
 Felix: Oh why hello there. Might you be an passing traveler?
 -> Is something wrong?
     Felix: I'm afraid so, you see there was some trembling recently.
-    Felix: I believe it might have weakened the cage and gave way for my cuccos to flee.
+    Felix: I believe it might have weakened the cage and gave way for my chickens to flee.
     -> Don't worry, I'll help you find them!
         Felix: Really!? That's great to hear!
-        Felix: There are a total of 5 cuccos, and they tend to find the strangest corners to hide in.
+        Felix: There are a total of 3 hen, and they tend to find the strangest corners to hide in.
         Felix: I wish you great success in finding them.
         <<stop>>
     -> I bet they taste great.
         Felix: ...
         <<stop>>
 -> Is that an animal pen?
-    Felix: Why yes it is, however it isn't populated with any cuccos at the moment.
+    Felix: Why yes it is, however it isn't populated with any chickens at the moment.
     -> What happened?
-        Felix: I believe the recent earthquake made an opening for the distraught cuccos to flee their cage.
+        Felix: I believe the recent earthquake made an opening for the distraught hen to flee their cage.
         Felix: I pray for their safety, not only are they like family to me, but they are crucial for the village rations.
         -> No problem! I can find them for you.
-            Felix: You will?! I'm in your debt. Without those cuccos, it will be difficult to get throught winter.
-            Felix: There are a total of 5 cuccos, and they tend to find the strangest corners to hide in.
+            Felix: You will?! I'm in your debt. Without those chickens, it will be difficult to get throught winter.
+            Felix: There are a total of 3 hen, and they tend to find the strangest corners to hide in.
             Felix: I wish you great success in finding them.
             <<stop>>
         -> I hope someone finds them soon.
-            Felix: Indeed, without the cucco the village will suffer a hard winter...
+            Felix: Indeed, without the hen the village will suffer a hard winter...
             <<stop>>
     -> Yeah, that kind of makes it pointless doesn't it?
-        Felix: Well...you see, the cuccos fled during the last earthquake that hit village.
+        Felix: Well...you see, the hen fled during the last earthquake that hit village.
         Felix: I need to find them before they get lost or in danger.
         Felix: The village needs their eggs for food in the winter.
         -> Those eggs sound yummy, here let me help you.
-            Felix: I'd very much appreciate it! There are 5 cuccos that fled the cage.
+            Felix: I'd very much appreciate it! There are 3 hen that fled the cage.
             Felix: I don't think they should have made it far, they should still be in the village.
             Felix: Let me know when you find them and I will give you some eggs in return.
             <<declare $eggs = true>>
