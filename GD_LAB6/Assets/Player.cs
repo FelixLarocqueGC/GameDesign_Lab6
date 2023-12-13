@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 2.0f;
     Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
@@ -26,8 +26,12 @@ public class Player : MonoBehaviour
         {
             yDir = -1.0f;
         }
+        else
+        {
+            yDir = 0;
+        }
 
-        else if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             xDir = -1.0f;
         }
@@ -36,8 +40,12 @@ public class Player : MonoBehaviour
         {
             xDir = 1.0f;
         }
-        Vector2 direction = new Vector2(xDir, yDir).normalized;
-        rb.velocity = direction * speed;
+        else
+        {
+            xDir = 0;
+        }
+
+        transform.position += new Vector3(xDir * speed, yDir * speed, 0.0f) * Time.deltaTime;
 
     }
 }
